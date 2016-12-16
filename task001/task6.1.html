@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.1</title>
+    <style>
+        .main{
+            width:100%;
+            margin:0 auto;
+            display:flex;
+            flex-direction:row;
+            margin-bottom: 20px;
+
+        }
+
+        .left{
+            width:50px;
+            height:50px;
+            background-color: #00A5E2;
+        }
+        .right{
+            width:50px;
+            height:50px;
+            background-color: #2b542c;
+        }
+        .middle{
+            flex:1;
+            height: 50px;
+            background-color: yellow;
+            margin:0 10px;
+        }
+        .all{
+            width:100%;
+
+        }
+        .all-left{
+            float: left;
+            width:50px;
+            height:50px;
+            background-color: #00A5E2;
+        }
+        .all-right{
+            float: right;
+            width:50px;
+            height:50px;
+            background-color: #2b542c;
+        }
+        .all-middle{
+            margin-right:60px;;
+            height:50px;
+            background-color: yellow;
+            margin-left:60px;
+
+        }
+        /*//清除浮动两种方式*/
+        /*//1.overflow:hidden*/
+        /**/
+        /*//第二种方式*/
+        .man{
+            width: 50%;
+            background: red;
+            /*主要解决IE下的问题*/
+            zoom: 1;
+        }
+        .man:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .women{
+            width: 100px;
+            margin: 10px;
+            height: 40px;
+            float: left;
+            background: blue;
+        }
+
+.sharp{
+    margin-top: 20px;
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+
+}
+.color1 b {
+    border-color: #000;
+
+}
+
+       .b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8{height:1px; font-size:1px; overflow:hidden; display:block;}
+
+      .b1,.b8{margin:0 5px;background:#000 ;
+          }
+
+       .b2,.b7{margin:0 3px;border-right:2px solid ; border-left:2px solid ;}
+
+       .b3,.b6{margin:0 2px;border-right:1px solid  ; border-left:1px solid ;}
+
+      .b4,.b5{margin:0 1px;border-right:1px solid ; border-left:1px solid ; height:2px;}
+      /*文字内容自己撑起来的宽，然后又line-height=20px 所以高度为20px */
+        .content{
+            border-left:1px solid ;border-right:1px solid;
+        }
+        /*//这个是内容区的背景颜色*/
+        .color1 .b2,.color1 .b3,.color1 .b4,.color1 .b5,.color1 .b6,.color1 .b7,.color1 .content{background:#2b542c;}
+    </style>
+
+</head>
+<body>
+<div class="main">
+    <div class="left">left</div>
+    <div class="middle">middle</div>
+    <div class="right">right</div>
+</div>
+
+<div class="all">
+    <div class="all-left">left</div>
+    <div class="all-right">right</div>
+    <div class="all-middle">middle</div>
+</div>
+
+<div class="man">
+    <div class="women">1</div>
+    <div class="women">2</div>
+    <div class="women">3</div>
+    <div class="women">4</div>
+    <div class="women">5</div>
+    <div class="women">6</div>
+    <div class="women">7</div>
+    <div class="women">8</div>
+</div>
+
+
+<div class="sharp color1">
+           <b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b>
+           <div class="content">文字内容</div>
+
+           <b class="b5"></b><b class="b6"></b><b class="b7"></b><b class="b8"></b>
+</div>
+
+</body>
+</html>
