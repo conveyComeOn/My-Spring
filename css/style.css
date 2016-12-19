@@ -460,3 +460,198 @@ line-height: 20px;
    width: 150px;
    text-align: center;
 }
+
+
+
+/*下面是gallery的css*/
+.gallerytop{
+    padding-top:70px;
+}
+.content-left .content-left-glally{
+    height:800px;
+    background-color: rgb(255,255,255);
+    position: relative;
+}
+.content-left-glally .menu{
+    height:50px;
+    width:auto;
+
+    position: absolute;
+    top:-52px;
+    left:0;
+}
+.content-left-glally .menu span{
+    height:30px;
+    line-height:30px;
+    float: left;
+    display: block;
+    cursor: pointer;
+    background-color: rgb(255,255,255);
+    padding:10px;
+    border-left:1px solid grey;
+    border-top:1px solid rgb(223,198,230);
+    border-bottom:1px solid rgb(223,198,230);
+}
+.content-left-glally .menu span:nth-child(1){
+    border-left:0;
+}
+.content-left-glally .menu span:nth-child(1):hover{
+    border-top:2px solid #8A25C6;
+    border-bottom:none;
+
+}
+.content-left-glally .menu span:nth-child(2):hover{
+    border-top:2px solid #00A5E2;
+    border-bottom:none;
+
+}
+.content-left-glally .menu span:nth-child(3):hover{
+    border-top:2px solid #2b542c;
+    border-bottom:none;
+}
+.content-left-glally .menu span:nth-child(4):hover{
+    border-top:2px solid #8a6d3b;
+    border-bottom:none;
+}
+.content-left-glally .menu span:nth-child(5):hover{
+    border-top:2px solid #5cb85c;
+    border-bottom:none;
+}
+
+.content-left-glally .column{
+    -moz-columns:180px 3;
+    -webkit-columns:180px 3;
+    columns:180px 3;
+    padding-top: 10px;
+}
+
+.content-left-glally .column .piv .pii{
+    padding:10px;
+    box-shadow: 0 0 6px #ccc;
+    border-radius:5px;
+
+}
+.content-left-glally .column .piv .pii img{
+    box-shadow: #1B242F;
+    border:1px solid #5e5e5e;
+    width:180px;
+}
+.content-left-glally .column .piv .pii h1{
+    color:#AEC1CC;
+}
+.content-left-glally .column .piv .pii p{
+    color: rgb(255,255,255);
+}
+
+
+
+
+
+
+/*about css*/
+.thisisbody{
+    background-color: rgb(238,238,238);
+}
+
+.about-contentbox{
+
+    width: 960px;
+    margin: 100px auto;
+
+    display: flex;
+    flex-direction: row;
+}
+.aboutmyname{
+    position: relative;
+
+}
+.left-decription,.right-decription{
+    width: 475px;
+
+    background-color: rgb(255,255,255);
+
+}
+.left-decription{
+    margin-right: 5px;
+}
+.left-decription span{
+    float: right;
+    font-size: 20px;
+    margin-right: 30px;
+}
+.left-decription .one{
+
+    margin-top: 200px;
+
+
+}
+.left-decription .two{
+    margin-top: 250px;
+}
+.left-decription .three{
+    margin-top: 230px;
+}
+.left-decription .four{
+    margin-top: 200px;
+
+}
+.right-decription{
+    margin-left: 5px;
+
+}
+.right-decription p{
+    margin-top: 140px;
+    width: 50%;
+    text-indent: 2em;
+    padding-left: 30px;
+}
+.right-decription ul{
+    margin-top: 120px;
+    list-style: none;
+    padding-left: 30px;
+
+}
+.right-decription ul:nth-of-type(1) li{
+    color: #000;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.right-decription ul:nth-of-type(3){
+
+    padding-bottom: 200px;
+}
+.right-decription ul:nth-of-type(2) li{
+    color: #000;
+    height: 20px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.right-decription ul .oneyear{
+    position: absolute;
+    left: -65px;
+    top: -11px;
+    border: 5px solid rgb(238,238,238);
+    padding:5px 10px;
+    border-radius: 20px;
+}
+.right-decription ul .twoyear{
+    position: absolute;
+    left: -65px;
+    top: 0;
+    border: 5px solid rgb(238,238,238);
+    padding:5px 10px;
+    border-radius: 20px;
+}
+.right-decription ul .threeyear{
+    position: absolute;
+    left: -65px;
+    top: -11px;
+    border: 5px solid rgb(238,238,238);
+    padding:5px 10px;
+    border-radius: 20px;
+}
+.right-decription ul:nth-of-type(3) li{
+    color: #000;
+    height: 20px;
+    margin-bottom: 25px;
+}
